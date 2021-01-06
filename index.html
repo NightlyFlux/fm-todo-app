@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./src/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/css/styles.css" />
+
+    <title>Frontend Mentor | Todo app</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 class="header__logo">Todo</h1>
+        <input id="header__switch" type="checkbox" />
+        <label for="header__switch" class="switch"></label>
+      </header>
+
+      <section class="todo new">
+        <input id="new-todo" type="checkbox" disabled />
+        <label for="new-todo" class="switch"></label>
+        <input
+          class="new-todo-text"
+          type="text"
+          placeholder="Create a new todo..."
+        />
+      </section>
+
+      <ul class="todos"></ul>
+
+      <input id="all" type="radio" name="filter" value="all" checked />
+      <input id="active" type="radio" name="filter" value="active" />
+      <input id="completed" type="radio" name="filter" value="completed" />
+
+      <section class="todo-actions">
+        <p class="todos-left">0 items left</p>
+        <div class="filters">
+          <label for="all">All</label>
+          <label for="active">Active</label>
+          <label for="completed">Completed</label>
+        </div>
+        <button class="clear">Clear Completed</button>
+      </section>
+
+      <div class="todo filters-mobile">
+        <label for="all">All</label>
+        <label for="active">Active</label>
+        <label for="completed">Completed</label>
+      </div>
+
+      <p class="drag-n-drop">Drag and drop to reorder list</p>
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://nightlyflux.tk" target="_blank">Salvador Gómez</a>.
+      </div>
+    </div>
+
+    <script src="./src/js/main.js"></script>
+  </body>
+</html>
